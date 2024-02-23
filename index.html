@@ -75,7 +75,72 @@
                         <span>cm</span>
                       </div>
                       <div>
-                        <p class="text-3xl">Area: <span id="displaypara"></span><span> cm<sup>2</sup></span></p>
+                        <p class="text-3xl">Area: <span id="displaypara"></span><span>cm<sup>2</sup></span></p>
+                      </div>
+                      <div class="card-actions justify-end">
+                        <button onclick="calculateParaArea()" class="btn btn-primary w-full">Calculate</button>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Rhombus card  -->
+                  <div class="card w-96 bg-base-100 shadow-xl">
+                    <figure><img src="images/rhombus.png" alt="Shoes" /></figure>
+                    <div class="card-body">
+                      <h2 class="text-3xl text-center">Rhombus</h2>
+                      <p class="text-3xl text-center">Area (A) = 0.5 x d <sub>1</sub> x d <sub>2</sub> </p>
+                      <div class="flex gap-2">
+                        <input id="rhombus-d1" class="w-24 p-2 rounded-md" type="text" placeholder="d1">
+                        <span>cm</span>
+                        <input id="rhombus-d2" class="w-24 p-2 rounded-md" type="text" placeholder="d2">
+                        <span>cm</span>
+                      </div>
+                      <div>
+                        <p class="text-3xl">Area: <span id="display-rhombus">0</span><span>cm<sup>2</sup></span></p>
+                      </div>
+                      <div class="card-actions justify-end">
+                        <button onclick="calculateRhombusArea()" class="btn btn-primary w-full">Calculate</button>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Pentagon card  -->
+
+                  <div class="card w-96 bg-base-100 shadow-xl">
+                    <figure><img src="images/pentagon.png" alt="Shoes" /></figure>
+                    <div class="card-body">
+                      <h2 class="text-3xl text-center">Pentagon</h2>
+                      <p class="text-3xl text-center">Area (A) = 0.5 x p x b </p>
+                      <div class="flex gap-2">
+                        <input id="perimeter" class="w-24 p-2 rounded-md" type="text" placeholder="p">
+                        <span>cm</span>
+                        <input id="apothem" class="w-24 p-2 rounded-md" type="text" placeholder="b">
+                        <span>cm</span>
+                      </div>
+                      <div>
+                        <p class="text-3xl">Area: <span id="display-pentagon"></span><span>cm<sup>2</sup></span></p>
+                      </div>
+                      <div class="card-actions justify-end">
+                        <button onclick="calculatePentagonArea()" class="btn btn-primary w-full">Calculate</button>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Ellipse card  -->
+
+                  <div class="card w-96 bg-base-100 shadow-xl">
+                    <figure><img src="images/ellipse.png" alt="Shoes" /></figure>
+                    <div class="card-body">
+                      <h2 class="text-3xl text-center">Parallelogram</h2>
+                      <p class="text-3xl text-center">Area (A) = b x h </p>
+                      <div class="flex gap-2">
+                        <input id="paraBase" class="w-24 p-2 rounded-md" type="text" placeholder="b">
+                        <span>cm</span>
+                        <input id="paraHeight" class="w-24 p-2 rounded-md" type="text" placeholder="h">
+                        <span>cm</span>
+                      </div>
+                      <div>
+                        <p class="text-3xl">Area: <span id="displaypara"></span><span>cm<sup>2</sup></span></p>
                       </div>
                       <div class="card-actions justify-end">
                         <button onclick="calculateParaArea()" class="btn btn-primary w-full">Calculate</button>
@@ -93,6 +158,8 @@
     <script src="triangle-calculate.js"></script>
     <script src="rectangale.js"></script>
     <script src="parallelogram.js"></script>
+    <script src="rhombus.js"></script>
+    <script src="pentagon.js"></script>
 </body>
 
 </html>
